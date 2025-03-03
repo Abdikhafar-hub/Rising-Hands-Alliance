@@ -1,3 +1,5 @@
+"use client"
+
 import { Mail, Phone, MapPin, Clock } from "lucide-react"
 
 export default function ContactSection() {
@@ -120,8 +122,17 @@ export default function ContactSection() {
 
             <div className="bg-white p-6 md:p-8 rounded-lg shadow-md">
               <h3 className="text-xl md:text-2xl font-bold mb-6">Our Location</h3>
-              <div className="bg-gray-200 w-full h-[300px] rounded-lg flex items-center justify-center">
-                <p className="text-gray-600">Map will be embedded here</p>
+              <div className="w-full h-[300px] rounded-lg overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6923097443264!2d39.6412561!3d-0.45537139999999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18204abab15c8165%3A0xb4a6e988af54f021!2sKCB%20Garissa!5e0!3m2!1sen!2ske!4v1741006678143!5m2!1sen!2ske"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="rounded-lg"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -130,4 +141,3 @@ export default function ContactSection() {
     </section>
   )
 }
-
