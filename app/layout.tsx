@@ -10,7 +10,9 @@ export const metadata: Metadata = {
   title: "Rising Hands Alliance - Humanitarian Aid in North Eastern Kenya",
   description:
     "Rising Hands Alliance is a humanitarian organization dedicated to helping those in need in refugee camps and marginalized areas in North Eastern Kenya.",
-    generator: 'v0.dev'
+  icons: {
+    icon: "https://res.cloudinary.com/ddkkfumkl/image/upload/v1740999487/zldbzioedvx0s0lqiaxl.png",
+  },
 }
 
 export default function RootLayout({
@@ -27,7 +29,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-
-import './globals.css'
